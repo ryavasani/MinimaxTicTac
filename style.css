@@ -1,0 +1,126 @@
+.the-container{
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    margin-top: 30px;
+}
+.the-title{
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+}
+h2{
+    text-align: center;
+    font-size: 25px; 
+}
+.border-btm {
+    border-bottom: 10px solid black;
+}
+.border-rt {
+    border-right: 10px solid black;
+}
+.the-row {
+    height: 100px;
+}
+.the-col {
+    height: 100px;
+    width: 100px;
+    float: left;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.the-col:hover{
+    background-color: lightblue;
+}
+body {
+    background: url("https://wallpaperset.com/w/full/8/0/3/171580.jpg");
+}
+.option-text{
+    margin-top: 1px;
+    font-size: 30px;
+}
+.start-btn{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 24px;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+}
+
+.all-btn-row{
+    margin-top: 170px;
+    text-align: center;
+}
+
+
+.options-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+.flex-option{
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 83px;
+    height: 45px;
+    margin: 0 10px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .3s;
+    border-radius: 26px;
+}
+.switch input {display:None}
+.slider:before
+{
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 36px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 38px;
+}
+
+input:checked + .slider
+{
+    background-color: blue
+}
+input:checked + .slider:before
+{
+    transform: translateX(38px);
+}
+
+.center-div {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
